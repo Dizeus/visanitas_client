@@ -1,0 +1,38 @@
+.setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 4px solid #212529;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.imgContainer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 20px solid #212529;
+  -webkit-box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.fullname {
+  font-size: 24px;
+  text-transform: capitalize;
+}

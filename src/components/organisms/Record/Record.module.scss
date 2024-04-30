@@ -1,0 +1,27 @@
+.record {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #212529;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  border-radius: 15px;
+
+  &__metrics{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__metric{
+    span{
+      margin-left: 5px;
+      color: rgb(255, 195, 0);
+    }
+  }
+}

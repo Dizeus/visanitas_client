@@ -1,0 +1,33 @@
+.fullname {
+  margin-bottom: 0;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+.imgContainer {
+  width: 70px;
+  height: 70px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 5px;
+}

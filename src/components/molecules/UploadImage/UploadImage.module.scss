@@ -1,0 +1,48 @@
+.modal__title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.modal__dropbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 2px dashed green;
+  border-radius: 20px;
+  height: 320px;
+  margin-bottom: 20px;
+  background: rgb(228, 228, 228) url("../../../assets/upload-bg.svg") center center no-repeat;
+}
+
+.modal__previewContainer {
+  width: 640px;
+  height: 320px;
+  padding: 20px 40px;
+}
+
+.modal__preview {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.modal__files {
+  color: #4e4b4b;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}

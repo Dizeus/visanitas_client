@@ -1,0 +1,33 @@
+.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form {
+  background-color: #212529;
+  padding: 15px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.input {
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  height: 50px;
+  border: none;
+  padding: 0 5px;
+}
+
+.button {
+  background-color: rgb(121, 209, 63);
+  border: none;
+  color: #212529;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 0 5px 5px 0;
+  letter-spacing: 0.3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: inherit;
+}
