@@ -1,11 +1,9 @@
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import style from './UsersGrid.module.scss';
 import { MyPagination } from '../../molecules/MyPagination/MyPagination';
 import { NoMessage } from '../../atoms/NoMessage/NoMessage';
 import { IUser } from '../../../utils/types/IUser';
-import {useTypedDispatch} from "../../../utils/hooks/useTypedDispatch";
 import {User} from "../../organisms/User/User";
-import {UserSearchForm} from "../../molecules/forms/UserSearchForm/UserSearchForm";
 
 interface UsersGridProps {
   users: IUser[],
@@ -14,7 +12,6 @@ interface UsersGridProps {
 }
 
 export const UsersGrid: FC<UsersGridProps> = ({users, fetchUsers, totalPage}) => {
-  const dispatch = useTypedDispatch();
 
 
   if (users.length < 1) {

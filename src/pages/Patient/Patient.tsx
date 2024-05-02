@@ -1,11 +1,11 @@
 import {FC, useEffect} from 'react';
 import { useTypedDispatch } from '../../utils/hooks/useTypedDispatch';
-import style from './Metrics.module.scss';
+import style from './Patient.module.scss';
 import {useTypedSelector} from "../../utils/hooks/useTypedSelector";
 import {Record} from "../../components/organisms/Record/Record";
 import {getPatientRecordsAction} from "../../store/records/recordsAction";
 import {Container} from "react-bootstrap";
-import {useLocation, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {NoMessage} from "../../components/atoms/NoMessage/NoMessage";
 
 const Patient: FC = () => {
