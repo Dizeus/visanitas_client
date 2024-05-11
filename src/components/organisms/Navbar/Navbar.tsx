@@ -33,17 +33,18 @@ export const MyNavbar: FC = () => {
             </NavDropdown.ItemText>
             <NavDropdown.Divider />
             <NavDropdown.ItemText>
+              <MyLink
+                  to={routes.settings}
+                  text="Дім"
+              />
+            </NavDropdown.ItemText>
+            <NavDropdown.ItemText>
               <MyLink to={routes.doctors} text='Лікарі' />
             </NavDropdown.ItemText>
             <NavDropdown.ItemText>
               <MyLink to={routes.metrics} text='Метрики' />
             </NavDropdown.ItemText>
-            <NavDropdown.ItemText>
-              <MyLink
-                to={routes.settings}
-                text="Налаштування"
-              />
-            </NavDropdown.ItemText>
+
             {user?.role === DOCTOR_ROLE && <NavDropdown.ItemText>
               <MyLink to={routes.patients} text='Пацієнти' />
             </NavDropdown.ItemText>}

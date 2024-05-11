@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import {FC, useState} from 'react';
 import style from './User.module.scss';
 import {IUser} from '../../../utils/types/IUser';
 import {Button} from 'react-bootstrap';
@@ -18,7 +18,10 @@ export const User: FC<DoctorProps> = ({user}) => {
     const dispatch = useTypedDispatch();
     const location = useLocation();
     const navigate = useNavigate();
+    const [isAdded, setIsAdded] = useState<boolean>(false)
+
     const addDoctor = () => {
+        setIsAdded(!isAdded)
        dispatch(addDoctorsAction(user.id))
     }
 
@@ -32,7 +35,7 @@ export const User: FC<DoctorProps> = ({user}) => {
             <div className={style.buttons}>
                 {location.pathname === '/doctors'?
                     <Button onClick={addDoctor} className={style.button} variant={"outline-light"}>
-                        Додати лікаря
+                        {isAdded ? "Відписати лікаря" : "Додати лікаря"}
                     </Button>
                     :
                     <Button onClick={viewRecords} className={style.button} variant={"outline-light"}>

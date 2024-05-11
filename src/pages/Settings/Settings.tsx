@@ -17,7 +17,7 @@ const Settings: FC = () => {
         <ChangeAvatar user={user}/>
         <DeleteConfirmation
           onDelete={() => dispatch(deleteAccountAction())}
-          name={i18next.t("objects.account")}
+          name="Аккаунт"
         />
       </div>
     </Container>
